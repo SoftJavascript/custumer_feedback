@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(248, 246, 243);
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.panel-container {
+  background-color: rgb(247, 241, 233);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  font-size: 90%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  padding: 30px;
+  max-width: 400px;
+}
+
+
+.panel-container {
+  line-height: 20px;
+}
+
+.ratings-container {
+  display: flex;
+  margin: 20px 0;
+}
+
+.rating {
+  flex: 1;
+  padding: 20px;
+  cursor: pointer;
+  margin: 10px 5px;
+}
+
+.rating:hover, 
+.rating.active {
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rating img {
+  width: 50px;
+}
+
+.rating small {
+  color: #555;
+  display: inline-block;
+  margin: 10px 0 0;
+}
+
+.rating:hover small, 
+.rating.active small{
+  color: #111;
+}
+
+.btn{
+  background-color: rgb(58, 53, 53);
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  padding: 12px 30px;
+  cursor: pointer;
+}
+
+.btn:focus{
+  outline: 0;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.fa-heart {
+  color:red;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
